@@ -9,11 +9,5 @@ class NrelService
 
   def raw_stations
     JSON.parse(get_json.body, symbolize_names: true)[:fuel_stations]
-  end
-
-  def stations
-    raw_stations.map do |raw_station|
-      Station.new(raw_station)
-    end
-  end
+  en
 end
