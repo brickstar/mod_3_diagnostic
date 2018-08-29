@@ -9,5 +9,5 @@ class NrelService
 
   def raw_stations
     JSON.parse(get_json.body, symbolize_names: true)[:fuel_stations]
-  en
+  end
 end
